@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import ThemeContextProvider from './contexts/ThemeContext';
 import ThemeToggle from './components/ThemeToggle';
 
