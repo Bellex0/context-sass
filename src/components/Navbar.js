@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 
 function Navbar() {
-    const { isLightTheme, light, dark } = useContext(ThemeContext)
-    const theme = isLightTheme ? light : dark;
+    const { isPink, pink, mint } = useContext(ThemeContext)
+    const theme = isPink ? pink : mint;
 
     return (
-        <nav className="nav" style={{ background: theme.ui, color: theme.syntax }}>
+        <nav className="nav" style={{ background: theme.bg, color: theme.syntax }}>
         <h1 className="nav__h1">Big Cat Refuge</h1>
         <ul className="nav__ul">
           <li className="nav__li">Home</li>

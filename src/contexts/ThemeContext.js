@@ -4,13 +4,14 @@ export const ThemeContext = createContext();
 
 class ThemeContextProvider extends Component {
     state = {
-      isLight: true,
-      light: { syntax: '#555', ui: '#ddd', bg: '#eee' },
-      dark: { syntax: '#ddd', ui: '#333', bg: '#555'}
+      isPink: true,
+      pink: { syntax: '#32cd32', bg: '#ffb6c1' },
+      mint: { syntax: '#00fa9a', bg: '#000'}
     }
 
     toggleTheme= () => {
-      this.setState({ isLight: !this.state.isLight });
+        console.log("hello")
+      this.setState({ isPink: !this.state.isPink });
     }
 
     render() { 

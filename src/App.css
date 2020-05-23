@@ -6,8 +6,19 @@ body {
 
 .nav {
   padding: 5px; }
+  .nav__h1 {
+    font-size: 36px; }
   .nav__ul {
     padding: 0; }
   .nav__li {
     display: inline-block;
     margin: 0 10px; }
+
+.btn {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #878787; }
