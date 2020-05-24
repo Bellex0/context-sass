@@ -5,8 +5,8 @@ export const ThemeContext = createContext();
 class ThemeContextProvider extends Component {
     state = {
       isPink: true,
-      pink: { syntax: '#32cd32', bg: '#ffb6c1' },
-      mint: { syntax: '#00fa9a', bg: '#000'}
+      pink: { text: '#32cd32', bg: '#ffb6c1' },
+      mint: { text: '#00fa9a', bg: '#000'}
     }
 
     toggleTheme= () => {
