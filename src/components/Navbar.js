@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
+import {ThemeToggle} from './ThemeToggle'
 
 function Navbar() {
     const { isPink, pink, mint } = useContext(ThemeContext)
@@ -13,7 +14,7 @@ function Navbar() {
           <li className="nav__li">About</li>
           <li className="nav__li">Contact</li>
         </ul>
-        <button className="nav__btn--hover">Change Theme</button>
+        <ThemeToggle/> 
       </nav>
     )
 }
